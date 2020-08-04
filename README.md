@@ -69,7 +69,7 @@ ________________________
 | ------------- |-------------| -----|
 | one to many | tree      |    visitor - logic owner is parent |
 | one to many | tree      |    compisite -logic owner is child |
-| one to many | tree      |   like above,but diff in getNext method strategy |
+| one to many | tree      |   iterator-like above,but diff in getNext,hasNext method strategy |
 | one to many | graph      |    mediator - one direction communicate with server |
 | one to many | graph      |    observer - childs communicate with childs maybe directly |
 
