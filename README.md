@@ -41,24 +41,52 @@ output types  [x,x,x,..] | x | Nullify(x)
 
 3.iterator (just getnext() and hasMore() implimented, sort of child scan be BFS,DFS,SJF,...)          
 4.mediator(one server , many clients . **all** must be connected to server, unidirection with server, child to child communicate is not possible)      
-5.observer(one server, many client, **some** of them can subscribe to server, bidirection with server, child can connect together )      
+5.observer(one server, many client, **some** of them can subscribe to server, bidirection with server, child can connect together)      
 6.memnto(cache)     
 7.state     
 8.strategy   
 9.command   
 10.visitor(logic handler is parent, child can't override)      
 11.composite like(login handler is child)    
-12.**pre-do-post** categorize actions in just 3 part(validate,do,serialize)   
+12.**pre-do-post** categorize actions in just 3 part(validate,process,serialize)   
 
 
 # distributed
 **comming soon ??? **   
 
+___________________
+# summary   
+## behavior request action types  
+> one server **with** many clients(server is container of them,(clients are server's child))     
+> many clients outside **to** one server(server is not container clients as child)    
+> one to one   
 
+## behavior many types connected together     
+> graph(each client can connect directly with other clients)       
+> tree(server connect like tree to childs(clients) ,so no way each client to other client directly)         
+________________________
+| request types        | many types           | which to user?  |
+| ------------- |-------------| -----|
+| one to many | tree      |    visitor - logic owner is parent |
+| one to many | tree      |    compisite -logic owner is child |
+| one to many | tree      |   like above,but diff in getNext method strategy |
+| one to many | graph      |    mediator - one direction communicate with server |
+| one to many | graph      |    observer - childs communicate with childs maybe directly |
 
+___________
+| request types        | server has state?           | which to user?  |
+| ------------- |-------------| -----|
+| many to one | true      |    cache(memento) |
+| many to one | true      |    strategy |
+| many to one | true      |    state |
+| many to one | false      |    command(just pure functions) |
 
-
-
+___________
+| request types        | server has order?           | which to user?  |
+| ------------- |-------------| -----|
+| one to one | true      |    chain of responsibility -just define chain functor and connect to next chain |
+| one to one | false      |   template - every part can be done random (just replace virtual method) |
+| one to one | true `maybe` false      |    pre-process-post |
 
 
 
