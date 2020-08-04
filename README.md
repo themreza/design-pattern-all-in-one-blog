@@ -52,7 +52,7 @@ output types  [x,x,x,..] | x | Nullify(x)
 
 
 # distributed
-**comming soon ??? **   
+** comming soon ??? **   
 
 ___________________
 # summary   
@@ -87,12 +87,10 @@ ___________
 | one to one | true      |    chain of responsibility -just define chain functor and connect to next chain |
 | one to one | false      |   template - every part can be done random (just replace virtual method) |
 | one to one | true `maybe` false      |    pre-process-post |
-
-
-
-
-
-
+     
+chain of resposible -> 3 -> 1 -> `2`->    
+template ->1 :heavy_check_mark: ->`2` :heavy_multiplication_x: ->3 :heavy_check_mark:->    
+can user **nullify** or **arraify** within step `2`
 
 
 
