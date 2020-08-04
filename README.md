@@ -34,12 +34,12 @@ output types  [x,x,x,..] | x | Nullify(x)
 
 ## behavior  
 #### how act a server with other (client(s)|server(s))   
-1.chain of responsiblity (with manually set ,order of operation)       
+1.chain of responsiblity (with manually set order of operation)       
 2.template (with hardcoded order of operation)  
 
 
 
-3.iterator (just getnext() and hasMore() implimented, sort of child scan be BFS,DFS,SJF,...)          
+3.iterator (just getnext() and hasMore() implimented. sort of childs can be BFS,DFS,SJF,...)          
 4.mediator(one server , many clients . **all** must be connected to server, unidirection with server, child to child communicate is not possible)      
 5.observer(one server, many client, **some** of them can subscribe to server, bidirection with server, child can connect together)      
 6.memnto(cache)     
@@ -57,8 +57,8 @@ output types  [x,x,x,..] | x | Nullify(x)
 ___________________
 # summary   
 ## behavior request action types  
-> one server **with** many clients(server is container of them,(clients are server's child))     
-> many clients outside **to** one server(server is not container clients as child)    
+> one server **with** many clients(server contains them,(clients are server's child))     
+> many clients outside **to** one server(server is not container of clients|child)    
 > one to one   
 
 ## behavior many types connected together     
