@@ -25,7 +25,7 @@ output types  [x,x,x,..] | x | Nullify(x)
 4.proxy (middleware for access function) **HOC**     
 5.fly weight (extract common structure for optimize memory)     
   |     
-   >--extract common     
+  |--extract common     
   |     
 6.bridge ( split a large class or a set of closely related )        
 7.composite (access with hierarchies)       
