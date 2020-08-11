@@ -68,10 +68,10 @@ ___________________
 
 <table  border="1">
   
-  <thead>#</thead>
-  <thead>request types </thead>
-  <thead>many types </thead>
-  <thead>which to use? </thead>
+  <td>**`#`**</td>
+  <td>**request types** </td>
+  <td>**many types **</td>
+  <td>**which to use?** </td>
   
   <tr>
     <td> 1 </td>
@@ -107,11 +107,12 @@ ___________________
 ________________________
 <table border="1">
   
-  <thead>#</thead>
-  <thead>request types </thead>
-  <thead> server has order?  </thead>
-  <thead>which to use? </thead>
-  
+  <tr>
+    <td>**`#`**</td>
+    <td>**request types **</td>
+    <td>** server has order?**  </td>
+    <td>**which to use?** </td>
+  </tr>
   <tr>
     <td> 1 </td>
     <td> many to one </td>
@@ -142,11 +143,12 @@ _________
 
 <table border="1">
   
-  <thead>#</thead>
-  <thead>request types </thead>
-  <thead>server has state?  </thead>
-  <thead>which to use? </thead>
-  
+  <tr>
+    <td>**`#`**</td>
+    <td>**request types **</td>
+    <td>**server has state? ** </td>
+    <td>**which to use?** </td>
+  </tr>
   <tr>
     <td> 1 </td>
     <td> many to one </td>
