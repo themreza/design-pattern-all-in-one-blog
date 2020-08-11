@@ -67,36 +67,108 @@ ___________________
 
 
 <table>
+  
+  <thead>#</thead>
   <thead>request types </thead>
+  <thead>many types </thead>
+  <thead>which to use? </thead>
+  
   <tr>
+    <td> 1 </td>
     <td> one to many </td>
     <td> tree      </td>
     <td>visitor - logic owner is parent </td>
   </tr>
+   <tr>
+    <td> 2 </td>
+    <td> one to many  </td> 
+    <td> tree       </td> 
+    <td>    compisite -logic owner is child  </td>
+  </tr>
+   <tr>
+    <td> 3 </td>
+    <td> one to many  <td> 
+    <td> tree       <td> 
+    <td>   iterator-like above,but diff in getNext,hasNext method strategy  <td>
+  </tr>
+  <tr>
+    <td> 4 </td>
+    <td> one to many  </td> 
+    <td> star       </td>
+    <td>   mediator - one direction communicate with server </td>
+  </tr>
+   <tr>
+    <td> 5 </td>
+    <td> one to many </td> 
+    <td> graph       </td> 
+    <td>  observer - childs communicate with childs maybe directly  </td>
+  </tr>
 </table>
 ________________________
-| request types        | many types           | which to user?  |
-| ------------- |-------------| -----|
-| one to many | tree      |    visitor - logic owner is parent |
-| one to many | tree      |    compisite -logic owner is child |
-| one to many | tree      |   iterator-like above,but diff in getNext,hasNext method strategy |
-| one to many | star      |    mediator - one direction communicate with server |
-| one to many | graph      |    observer - childs communicate with childs maybe directly |
-
-___________
-| request types        | server has state?           | which to user?  |
-| ------------- |-------------| -----|
-| many to one | true      |    cache(memento) |
-| many to one | true      |    strategy |
-| many to one | true      |    state |
-| many to one | false      |    command(just pure functions) |
-
-___________
-| request types        | server has order?           | which to user?  |
-| ------------- |-------------| -----|
-| one to one | true      |    chain of responsibility -just define chain functor and connect to next chain |
-| one to one | false      |   template - every part can be done random (just replace virtual method) |
-| one to one | true `maybe` false      |    pre-process-post |
+<table>
+  
+  <thead>#</thead>
+  <thead>request types </thead>
+  <thead> server has order?  </thead>
+  <thead>which to use? </thead>
+  
+  <tr>
+    <td> 1 </td>
+    <td> many to one </td>
+    <td> true      </td>
+    <td>cache(memento) </td>
+  </tr>
+   <tr>
+    <td> 2 </td>
+    <td> many to one  <td> 
+    <td> true       <td> 
+    <td>   strategy <td>
+  </tr>
+  <tr>
+    <td> 3 </td>
+    <td> many to one  </td> 
+    <td> true      </td> 
+    <td>   state </td>
+  </tr>
+   <tr>
+    <td> 4 </td>
+    <td> many to one </td> 
+    <td> false       </td> 
+    <td>  command(just pure functions) </td>
+  </tr>
+</table>
+<table>
+  
+  <thead>#</thead>
+  <thead>request types </thead>
+  <thead>server has state?  </thead>
+  <thead>which to use? </thead>
+  
+  <tr>
+    <td> 1 </td>
+    <td> many to one </td>
+    <td> true      </td>
+    <td> chain of responsibility -just define chain functor and connect to next chain </td>
+  </tr>
+   <tr>
+    <td> 2 </td>
+    <td> many to one  <td> 
+    <td> false       <td> 
+    <td>   template - every part can be done random (just replace virtual method)  <td>
+  </tr>
+  <tr>
+    <td> 3 </td>
+    <td> many to one  </td> 
+    <td> true maybe false     </td> 
+    <td>   **pre-process-post** </td>
+  </tr>
+   <tr>
+    <td> 4 </td>
+    <td> many to one </td> 
+    <td> false       </td> 
+    <td>  **dynamic piple** </td>
+  </tr>
+</table>
      
 chain of resposible -> 3 -> 1 -> `2`->    
 template ->1 :heavy_check_mark: ->`2` :heavy_multiplication_x: ->3 :heavy_check_mark:->    
