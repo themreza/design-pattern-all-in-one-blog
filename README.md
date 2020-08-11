@@ -64,6 +64,16 @@ ___________________
 ## behavior many types connected together     
 > graph(each client can connect directly with other clients)       
 > tree(server connect like tree to childs(clients) ,so no way each client to other client directly)         
+
+
+<table>
+  <thead>request types </thead>
+  <tr>
+    <td> one to many </td>
+    <td> tree      </td>
+    <td>visitor - logic owner is parent </td>
+  </tr>
+</table>
 ________________________
 | request types        | many types           | which to user?  |
 | ------------- |-------------| -----|
