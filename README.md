@@ -87,9 +87,9 @@ ___________________
   </tr>
    <tr>
     <td> 3 </td>
-    <td> one to many  <td> 
-    <td> tree       <td> 
-    <td>   iterator-like above,but diff in getNext,hasNext method strategy  <td>
+    <td> one to many  </td> 
+    <td> tree       </td> 
+    <td>   iterator-like above,but diff in getNext,hasNext method strategy  </td>
   </tr>
   <tr>
     <td> 4 </td>
@@ -120,9 +120,9 @@ ________________________
   </tr>
    <tr>
     <td> 2 </td>
-    <td> many to one  <td> 
-    <td> true       <td> 
-    <td>   strategy <td>
+    <td> many to one  </td> 
+    <td> true       </td> 
+    <td>   strategy </td>
   </tr>
   <tr>
     <td> 3 </td>
@@ -152,9 +152,9 @@ ________________________
   </tr>
    <tr>
     <td> 2 </td>
-    <td> many to one  <td> 
-    <td> false       <td> 
-    <td>   template - every part can be done random (just replace virtual method)  <td>
+    <td> many to one  </td> 
+    <td> false       </td> 
+    <td>   template - every part can be done random (just replace virtual method)  </td>
   </tr>
   <tr>
     <td> 3 </td>
