@@ -67,12 +67,12 @@ ___________________
 
 
 <table  border="1">
-  
-  <td>**`#`**</td>
-  <td>**request types** </td>
-  <td>**many types **</td>
-  <td>**which to use?** </td>
-  
+  <tr>
+    <td>**`#`**</td>
+    <td>**request types** </td>
+    <td>**many types **</td>
+    <td>**which to use?** </td>
+  </tr>
   <tr>
     <td> 1 </td>
     <td> one to many </td>
