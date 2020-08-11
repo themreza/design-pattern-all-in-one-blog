@@ -66,7 +66,7 @@ ___________________
 > tree(server connect like tree to childs(clients) ,so no way each client to other client directly)         
 
 
-<table  style="border:1px solid black">
+<table  border="1">
   
   <thead>#</thead>
   <thead>request types </thead>
@@ -105,7 +105,7 @@ ___________________
   </tr>
 </table>
 ________________________
-<table style="border:1px solid black">
+<table border="1">
   
   <thead>#</thead>
   <thead>request types </thead>
@@ -140,7 +140,7 @@ ________________________
 
 _________
 
-<table style="border:1px solid black">
+<table border="1">
   
   <thead>#</thead>
   <thead>request types </thead>
