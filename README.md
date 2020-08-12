@@ -178,7 +178,7 @@ _________
 chain of resposible -> 3 -> 1 -> `2`->    
 template ->1 :heavy_check_mark: ->`2` :heavy_multiplication_x: ->3 :heavy_check_mark:->     
 can user **nullify** or **arraify** within step `2`    
-dynamic pipeline ->4,5,6 || 3,2,1 || 7,8,9     
+dynamic pipeline ->4,5,6 || 3,2,1 || 7,1,8,9,5,3,3,1     
 
 
 
