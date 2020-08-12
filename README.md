@@ -146,38 +146,40 @@ _________
   <tr>
     <td>**`#`**</td>
     <td>**request types **</td>
-    <td>**server has state? ** </td>
+    <td>**server has order? ** </td>
     <td>**which to use?** </td>
   </tr>
   <tr>
     <td> 1 </td>
-    <td> many to one </td>
+    <td> one to one </td>
     <td> true      </td>
     <td> chain of responsibility -just define chain functor and connect to next chain </td>
   </tr>
    <tr>
     <td> 2 </td>
-    <td> many to one  </td> 
+    <td> one to one  </td> 
     <td> false       </td> 
     <td>   template - every part can be done random (just replace virtual method)  </td>
   </tr>
   <tr>
     <td> 3 </td>
-    <td> many to one  </td> 
+    <td> one to one  </td> 
     <td> true maybe false     </td> 
     <td>   **pre-process-post** </td>
   </tr>
    <tr>
     <td> 4 </td>
-    <td> many to one </td> 
+    <td> one to one </td> 
     <td> false       </td> 
-    <td>  **dynamic piple** </td>
+    <td>  **dynamic pipeline (plugins)** add dynamic config like micro-kernel plugins </td>
   </tr>
 </table>
      
 chain of resposible -> 3 -> 1 -> `2`->    
-template ->1 :heavy_check_mark: ->`2` :heavy_multiplication_x: ->3 :heavy_check_mark:->    
-can user **nullify** or **arraify** within step `2`
+template ->1 :heavy_check_mark: ->`2` :heavy_multiplication_x: ->3 :heavy_check_mark:->     
+can user **nullify** or **arraify** within step `2`    
+dynamic pipeline ->4,5,6 || 3,2,1 || 7,8,9     
+
 
 
 
