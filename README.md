@@ -110,7 +110,7 @@ ________________________
   <tr>
     <td>**`#`**</td>
     <td>**request types **</td>
-    <td>** server has order?**  </td>
+    <td>** server has state?**  </td>
     <td>**which to use?** </td>
   </tr>
   <tr>
